@@ -6,10 +6,11 @@ import Watched from './components/Watched';
 import Add from './components/Add';
 import './lib/font-awesome/css/all.min.css';
 import  Watchlist from "./components/Watchlist";
+import {GlobalProvider} from './context/GlobalState';
 
 function App() {
   return (
-    <>
+    <GlobalProvider>
       <Router>
         <Header />
 
@@ -19,7 +20,7 @@ function App() {
           <Route path="/add" element={<Add />} />
         </Routes>
       </Router>
-    </>
+    </GlobalProvider>
   );
 }
 
