@@ -13,7 +13,6 @@ function App() {
     <GlobalProvider>
       <Router>
         <Header />
-
         <Routes>
           <Route exact path="/"  element={<Watchlist />} />
           <Route path="/watched" element={<Watched />} />
