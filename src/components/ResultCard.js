@@ -33,9 +33,15 @@ export default function ResultCard({movie}){
               <div className="controls">
                 <button className="btn"
                 disabled = {watchListDisabled}
-                onClick={addMovieToWatchList(movie)}>Add to WatchList</button>
+                onClick={() => {
+                  return addMovieToWatchList(movie);
+                }}
+                >
+                  Add to WatchList
+                  </button>
               </div>
             </div>
         </div>
   )
 }
+
