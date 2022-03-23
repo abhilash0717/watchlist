@@ -8,7 +8,6 @@ export default function ResultCard({movie}){
   let storedMovie = watchList.find(o => o.id === movie.id);
   // console.log(storedMovie + "-----");
   const watchListDisabled = storedMovie ? true : false;
-  console.log(watchListDisabled);
 
   return (
     <div className="result-card">
@@ -18,7 +17,7 @@ export default function ResultCard({movie}){
                     (<img src = {`https://image.tmdb.org/t/p/w200${movie.poster_path}`} 
                     alt = {`${movie.title} Poster `} />) 
                     :
-                    <div className="filler-poster"></div> 
+                    (<div className="filler-poster"></div>) 
                 }
             </div>
 
