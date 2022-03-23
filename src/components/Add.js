@@ -14,8 +14,6 @@ export default function Add () {
     .then(data => {
       if(!data.errors){
         setResults(data.results);
-        console.log("resultys array ----");
-        console.log(results);
       }else{
         setResults([]);
       }
